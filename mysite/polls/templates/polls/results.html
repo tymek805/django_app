@@ -7,7 +7,7 @@
         <li> {{choice.choice_text}} -- {{choice.num_of_votes}} vote{{ choice.num_of_votes|pluralize}}</li>
     {% endfor %}
 </ul>
-
+<a href="{% url 'polls:index' %}"> <- Back to Question List &emsp;</a>
 <a href="{% url 'polls:detail' question.id %}"> Vote Again? </a>
 
 {% endblock %}
